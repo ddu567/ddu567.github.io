@@ -7,6 +7,7 @@
   font-style: normal;
 }
 
+/* reset */
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +18,15 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   /* outline: 1px solid lightcoral; */
+}
+
+a {
+  color: #555;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
 }
 
 /* hidden scrollbar */
@@ -36,35 +46,33 @@ header {
   align-items: center;
   padding: 0 50px;
   position: fixed;
-}
-
-a {
-  color: #555;
+  z-index: 999;
 }
 
 h1 a {
   display: block;
   font-size: 1.6rem;
   letter-spacing: 0.5rem;
-  color:#555
+  color: #555
 }
 
 nav ul {
   display: flex;
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 nav ul li {
   padding: 0 10px;
   font-size: 2rem;
+  letter-spacing: 0.2rem;
 }
 
 /* common section */
 /* scroll-snap */
 #wrap {
   width: 100%;
-  height: 100vh;
-  overflow: scroll;
+  /* height: 100vh; */
+  /* overflow: scroll; */
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
 }
@@ -88,21 +96,31 @@ h3 {
   letter-spacing: 0.5rem;
 }
 
+.fontAwesome,
+i,
+.fontAwesome a {
+  font-size: 1.3rem;
+  padding-left: 2px;
+}
+
 /* MAIN */
 #main {
   background: url(images/bg1.png) no-repeat center/100% fixed;
+  position: relative;
 }
 
 .hello {
   width: 600px;
-  margin: auto;
-  translate: 0 400%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #eee;
   text-align: center;
 }
 
 .hello p {
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-top: 20px;
 }
 
@@ -115,8 +133,13 @@ h3 {
   translate: 0 50%;
 }
 
+#about img {
+  width: 450px;
+  margin-right: 20px;
+}
+
 .aboutWrap h3 {
-  margin: 10px 0 20px;
+  margin: 10px 0 30px;
   letter-spacing: 0;
   text-align: left;
 }
@@ -125,18 +148,29 @@ h3 {
   width: 50%;
 }
 
-#about img {
-  width: 450px;
+.aboutDesc  span {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+.fontAwesome{
+  margin-top: 16px;
+  display: flex;
+}
+
+.studyDesc {
+  padding: 4px;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 
 /* SKILLS */
 .skillsWrap {
   padding: 0 50px;
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
   margin-top: 80px;
 }
-
 
 .use span {
   display: block;
@@ -149,9 +183,7 @@ h3 {
 
 
 /* CONTACT */
-.contactWrap {
-  height: 73%
-}
+
 
 /* footer */
 footer {
