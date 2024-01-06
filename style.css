@@ -97,8 +97,8 @@ h3 {
 }
 
 .fontAwesome,
-i,
-.fontAwesome a {
+.fontAwesome a,
+  i {
   font-size: 1.3rem;
   padding-left: 2px;
 }
@@ -183,7 +183,27 @@ i,
 
 
 /* CONTACT */
+#contact {
+  position: relative;
+}
 
+.contactDesc{
+  /* width: 100%; */
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.contactDesc p {
+  font-size: 3em;
+  text-align: center;
+}
+
+.faWrap {
+  width: 300px;
+  margin: 60px auto;
+}
 
 /* footer */
 footer {
@@ -191,5 +211,10 @@ footer {
   background: #555;
   color: #eee;
   text-align: center;
-  line-height: 100px;
+  padding-top: 20px;
+}
+
+footer span {
+  display: block;
+  padding: 4px;
 }
