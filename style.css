@@ -183,40 +183,76 @@ h3 {
   padding: 0 50px;
 }
 
+.preview {
+  /* outline: 1px solid lightcoral; */
+  width: 75%;
+  margin: 50px auto 30px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.preview img {
+  width: 24%;
+}
+
 .tabWrap {
-  width: 80%;
+  width: 75%;
+  height: 50%;
   margin: 0 auto;
 }
 
 .tabTitle {
   display: flex;
+  position: absolute;
+  z-index: 5;
 }
 
 .tab {
+  border: 1px solid #999999;
   background-color: #999999;
   color: #eee;
-  padding: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-.on {
+.tabOn {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  color: #111;
+}
+
+.contentWrap {
+  position: absolute;
+  margin-top: 38px;
+  width: 70%;
+}
+
+.project {
   border: 1px solid #999999;
-}
-
-.project1 {
-  padding: 10px;
+  padding: 20px 10px;
   display: flex;
   justify-content: space-around;
-  border: 1px solid #999999;
+  position: absolute;
+  display: none;
 }
 
-.project1 img {
+.contentOn {
+  display: flex;
+}
+
+.project img {
   max-width: 60%;
   margin-right: 20px;
 }
 
-.project1 span,
-.project1 p,
-.project1 a {
+.projectDesc {
+  width: 30%;
+}
+
+.project span,
+.project p,
+.project a {
   display: block;
   padding: 4px 0;
 }
