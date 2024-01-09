@@ -184,16 +184,16 @@ h3 {
 }
 
 .preview {
-  /* outline: 1px solid lightcoral; */
   width: 75%;
-  margin: 50px auto 30px;
+  margin: 60px auto 40px;
   display: flex;
   justify-content: space-evenly;
-
 }
 
 .preview img {
   width: 24%;
+  cursor: pointer;
+  outline: 1px solid #c9c9c9;
 }
 
 .tabWrap {
@@ -209,32 +209,37 @@ h3 {
 }
 
 .tab {
-  border: 1px solid #999999;
   background-color: #999999;
   color: #eee;
   padding: 10px 20px;
+  margin-right: 2px;
   cursor: pointer;
+  letter-spacing: 0.1rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .tabOn {
-  background-color: #fff;
-  border-bottom: 1px solid #fff;
-  color: #111;
+  background-color: #e7e7e7;
+  color: #eb7979;
+  font-weight: bold;
 }
 
 .contentWrap {
   position: absolute;
-  margin-top: 38px;
+  margin-top: 37px;
   width: 70%;
 }
 
 .project {
-  border: 1px solid #999999;
+  background-color: #e7e7e7;
   padding: 20px 10px;
   display: flex;
   justify-content: space-around;
   position: absolute;
   display: none;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
 }
 
 .contentOn {
@@ -255,6 +260,13 @@ h3 {
 .project a {
   display: block;
   padding: 4px 0;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.project span {
+  font-size: 1.5rem;
+  margin: 16px 0;
 }
 
 /* CONTACT */
