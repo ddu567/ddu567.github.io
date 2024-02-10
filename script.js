@@ -1,3 +1,6 @@
+// Common
+const bgOpacity = document.querySelector('.bgOpacity');
+
 // Works
 const preview = document.querySelectorAll(".preview > img");
 const tabBtns = document.querySelectorAll(".tabTitle > div");
@@ -35,7 +38,6 @@ tabBtns.forEach((btn, index) => {
 
 // modal popup
 const popup = document.querySelectorAll('.popup');
-const modalBg = document.querySelector('.modalWrap');
 const modal = document.querySelector('.modal');
 const contentTitle = document.querySelectorAll('.modalHead > li')
 const contentList = document.querySelectorAll('.modalContent > li')
@@ -43,7 +45,7 @@ const close = document.querySelector('.modal span');
 
 function closeFn() {
   modal.classList.remove('modalOn');
-  modalBg.classList.remove('bg');
+  bgOpacity.style.opacity = 0;
   contentTitle.forEach((title) => {
     title.style.display = 'none';
   });
@@ -56,7 +58,7 @@ popup.forEach((pop, index) => {
   pop.style.cursor = 'pointer';
   pop.addEventListener('click', () => {
     closeFn();
-    modalBg.classList.add('bg');
+    bgOpacity.style.opacity = 1;
     modal.classList.add('modalOn');
     contentTitle[index].style.display = 'block';
     contentList[index].style.display = 'block';
@@ -79,3 +81,28 @@ window.addEventListener("keyup", e => {
     closeFn();
   }
 });
+
+
+// media query
+const menubar = document.querySelector('.menubar');
+const nav = document.querySelector('nav');
+const closedBtn = document.querySelector('.close');
+
+const menuList = document.querySelectorAll('nav ul li');
+
+function openMenu() {
+  nav.style.display = 'block';
+  bgOpacity.style.opacity = 1;
+};
+function closeMenu() {
+  nav.style.display = 'none';
+  bgOpacity.style.opacity = 0;
+}
+
+menubar.addEventListener('click', () => { openMenu() });
+closedBtn.addEventListener('click', () => { closeMenu() });
+
+// menuList.forEach((list)=> {
+//   list.addEventListener('click', () => {closeMenu()
+//   });
+// });
