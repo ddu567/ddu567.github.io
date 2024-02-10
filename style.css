@@ -558,7 +558,7 @@ footer span {
   .aboutDesc {
     width: 100%;
   }
-  
+
   .aboutDesc h3 {
     margin: 32px 0 12px;
     width: 100%;
@@ -633,10 +633,6 @@ footer span {
 @media(max-width: 521px) {
 
   /* nav */
-  header {
-    position: relative;
-  }
-
   nav {
     display: none;
     width: 240px;
