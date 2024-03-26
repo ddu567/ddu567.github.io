@@ -376,12 +376,6 @@ i {
   padding: 10px;
 }
 
-.contentWrap:hover .projectDesc span {
-  background: #ffd779ad;
-  border-radius: 10px;
-
-}
-
 .popup {
   color: #555;
 }
@@ -392,7 +386,6 @@ i {
 }
 
 /* modal popup */
-
 .modal {
   z-index: 99;
   position: absolute;
@@ -510,7 +503,6 @@ footer span {
 
 /* media - tablet */
 @media(max-width:800px) {
-
   /* header */
   h1 {
     margin-left: 30px;
@@ -631,7 +623,6 @@ footer span {
 }
 
 @media(max-width: 521px) {
-
   /* nav */
   nav {
     display: none;

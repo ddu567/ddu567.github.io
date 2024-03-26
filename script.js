@@ -79,6 +79,7 @@ window.addEventListener("keyup", e => {
   e.preventDefault();
   if (e.key == "Escape") {
     closeFn();
+    closeMenu();
   }
 });
 
@@ -95,7 +96,8 @@ function openMenu() {
   bgOpacity.style.opacity = 1;
 };
 function closeMenu() {
-  nav.style.display = 'none';
+  // nav.style.display = 'none';
+  nav.style.removeProperty("display");
   bgOpacity.style.opacity = 0;
 }
 
