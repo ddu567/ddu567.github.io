@@ -69,9 +69,7 @@ popup.forEach((pop, index) => {
 close.style.cursor = 'pointer';
 close.addEventListener('click', () => {
   closeFn();
-  // contentList.forEach((list) => {
-  //   list.classList.remove('modalOn');
-  // });
+
 });
 
 // esc close modal
@@ -96,7 +94,7 @@ function openMenu() {
   bgOpacity.style.opacity = 1;
 };
 function closeMenu() {
-  // nav.style.display = 'none';
+
   nav.style.removeProperty("display");
   bgOpacity.style.opacity = 0;
 }
@@ -104,7 +102,4 @@ function closeMenu() {
 menubar.addEventListener('click', () => { openMenu() });
 closedBtn.addEventListener('click', () => { closeMenu() });
 
-// menuList.forEach((list)=> {
-//   list.addEventListener('click', () => {closeMenu()
-//   });
-// });
+

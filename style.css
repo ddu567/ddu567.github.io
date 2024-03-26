@@ -173,14 +173,14 @@ i {
 
 /* ABOUT */
 .aboutWrap {
-  width: 65%;
+  width: 76%;
   margin: 150px auto 50px;
   display: flex;
   justify-content: space-around;
 }
 
 #about img {
-  max-width: 50%;
+  max-width: 46%;
   margin-right: 20px;
 }
 
@@ -219,45 +219,27 @@ i {
 }
 
 /* SKILLS */
-.skillsWrap {
+.skillsList {
   width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 80px;
-}
-
-.skillsWrap img {
-  width: 80%;
-}
-
-.use {
+  margin-top: 100px;
   text-align: center;
   transition: all 0.3s ease;
-  /* visibility: hidden; */
 }
 
-.useOn {
-  visibility: visible;/
-}
-
-.use img {
+.skillsList img {
+  width: 84%;
   border-radius: 12px;
 }
 
-.use img:hover {
+.skillsList img:hover {
   transform: translate(4px, 4px);
   box-shadow:
     7px 7px 20px 0px #0002,
     10px 10px 10px 0px #0001;
   ;
-}
-
-.use span {
-  display: block;
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 8px;
 }
 
 /* animation */
@@ -301,7 +283,8 @@ i {
   outline: 1px solid #c9c9c950;
 }
 
-.preview img:hover {
+.preview img:hover,
+.project img:hover {
   box-shadow:
     -7px 7px 20px 0px #0002,
     -10px 10px 10px 0px #0001,
@@ -372,7 +355,7 @@ i {
 .projectDesc span {
   display: block;
   font-size: 1.5rem;
-  margin: 12px 0;
+  margin: 12px 0 8px;
   padding: 10px;
 }
 
@@ -479,11 +462,14 @@ i {
 }
 
 .faWrap {
-  /* max-width: 30%; */
   margin-top: 60px;
-  padding: 20px;
+  padding: 10px 20px 20px;
   background-color: rgba(194, 194, 194, 0.3);
   border-radius: 20px;
+}
+
+.faWrap a {
+  color: #fafafa;
 }
 
 /* footer */
@@ -503,6 +489,7 @@ footer span {
 
 /* media - tablet */
 @media(max-width:800px) {
+
   /* header */
   h1 {
     margin-left: 30px;
@@ -524,6 +511,8 @@ footer span {
   nav ul li a {
     font-size: 0.9rem;
   }
+
+
 
   /* common */
   h3 {
@@ -623,6 +612,7 @@ footer span {
 }
 
 @media(max-width: 521px) {
+
   /* nav */
   nav {
     display: none;
